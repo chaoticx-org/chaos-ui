@@ -1,1 +1,2 @@
-# chaos-ui
+# ChaosTheorX
+Chaotic Software today Peace Tomorrow

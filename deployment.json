@@ -1,0 +1,158 @@
+{
+  "id": "/subscriptions/fb8c91ff-9384-4608-9596-27a3abab794f/resourceGroups/myrg/providers/Microsoft.Resources/deployments/Microsoft.Web-FunctionApp-Portal-9faee22f-8dd2",
+  "name": "Microsoft.Web-FunctionApp-Portal-9faee22f-8dd2",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/fb8c91ff-9384-4608-9596-27a3abab794f/resourcegroups/myrg/providers/Microsoft.Web/sites/powerstockx",
+    "marketplaceItemId": "Microsoft.FunctionApp",
+    "provisioningHash": "customize-post-provisioning-steps-functionapp-deployment"
+  },
+  "properties": {
+    "templateHash": "12267054123709465214",
+    "parameters": {
+      "subscriptionId": {
+        "type": "String",
+        "value": "fb8c91ff-9384-4608-9596-27a3abab794f"
+      },
+      "name": {
+        "type": "String",
+        "value": "powerstockx"
+      },
+      "location": {
+        "type": "String",
+        "value": "Central US"
+      },
+      "hostingPlanName": {
+        "type": "String",
+        "value": "ASP-myrg-b4b0"
+      },
+      "serverFarmResourceGroup": {
+        "type": "String",
+        "value": "myrg"
+      },
+      "alwaysOn": {
+        "type": "Bool",
+        "value": false
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "storageaccountmyrgb142"
+      },
+      "use32BitWorkerProcess": {
+        "type": "Bool",
+        "value": true
+      },
+      "powerShellVersion": {
+        "type": "String",
+        "value": "~7"
+      },
+      "sku": {
+        "type": "String",
+        "value": "Dynamic"
+      },
+      "skuCode": {
+        "type": "String",
+        "value": "Y1"
+      },
+      "workerSize": {
+        "type": "String",
+        "value": "0"
+      },
+      "workerSizeId": {
+        "type": "String",
+        "value": "0"
+      },
+      "numberOfWorkers": {
+        "type": "String",
+        "value": "1"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2021-04-26T02:13:20.9420039Z",
+    "duration": "PT3.7029756S",
+    "correlationId": "abb5fbbb-aa87-4990-95da-14f7bee67c91",
+    "providers": [
+      {
+        "namespace": "Microsoft.Web",
+        "resourceTypes": [
+          {
+            "resourceType": "sites",
+            "locations": [
+              "centralus"
+            ]
+          },
+          {
+            "resourceType": "serverfarms",
+            "locations": [
+              "centralus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "microsoft.insights",
+        "resourceTypes": [
+          {
+            "resourceType": "components",
+            "locations": [
+              "centralus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Storage",
+        "resourceTypes": [
+          {
+            "resourceType": "storageAccounts",
+            "locations": [
+              "centralus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/fb8c91ff-9384-4608-9596-27a3abab794f/resourceGroups/myrg/providers/microsoft.insights/components/powerstockx",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "powerstockx"
+          },
+          {
+            "id": "/subscriptions/fb8c91ff-9384-4608-9596-27a3abab794f/resourceGroups/myrg/providers/Microsoft.Web/serverfarms/ASP-myrg-b4b0",
+            "resourceType": "Microsoft.Web/serverfarms",
+            "resourceName": "ASP-myrg-b4b0"
+          },
+          {
+            "id": "/subscriptions/fb8c91ff-9384-4608-9596-27a3abab794f/resourceGroups/myrg/providers/Microsoft.Storage/storageAccounts/storageaccountmyrgb142",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "storageaccountmyrgb142"
+          },
+          {
+            "id": "/subscriptions/fb8c91ff-9384-4608-9596-27a3abab794f/resourceGroups/myrg/providers/microsoft.insights/components/powerstockx",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "powerstockx",
+            "apiVersion": "2015-05-01"
+          },
+          {
+            "id": "/subscriptions/fb8c91ff-9384-4608-9596-27a3abab794f/resourceGroups/myrg/providers/Microsoft.Storage/storageAccounts/storageaccountmyrgb142",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "storageaccountmyrgb142",
+            "actionName": "listKeys",
+            "apiVersion": "2019-06-01"
+          }
+        ],
+        "id": "/subscriptions/fb8c91ff-9384-4608-9596-27a3abab794f/resourceGroups/myrg/providers/Microsoft.Web/sites/powerstockx",
+        "resourceType": "Microsoft.Web/sites",
+        "resourceName": "powerstockx"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
